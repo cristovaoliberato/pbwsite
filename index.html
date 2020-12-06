@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title> Cidade de Palmas</title>
+   </head>
+   <style>
+      @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+      @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+      *{
+         padding: 12px 0px;
+         margin: auto;
+
+      }
+      #texto-imagem
+      {
+         text-align: center;
+      }
+      .coluna img
+      {
+         width: 300px;
+         height: 180px;
+      }
+      .header 
+      {
+         text-align: center;
+         background: #12daae;
+         font-size: 20px;
+         width: 100vw;
+         left: 0px;
+         margin-left: 0;  
+         position: absolute;
+         top: 0;
+         margin: 0;
+         border-bottom:1px solid   #91ffe3;
+      }
+      .header ul 
+      {
+         padding:0px;
+         margin:0px;
+         color: #3fffd6;
+         list-style:none;
+         float: right;
+         width: auto;
+         
+      }
+      .header ul li 
+      { 
+         float: right;
+         width: auto;
+         border-right:1px solid   #ffffff;
+      }
+      .header ul li a 
+      {
+         text-transform: uppercase;
+         padding: 15px 10px;
+         display: inline-block;
+         color: rgb(255, 255, 255);
+         width: 170px;
+         height: 100%;
+         text-decoration: none;
+         font-family: 'Poppins', sans-serif;
+      }
+      .header ul li:hover 
+      {
+         background-color:#6ca8ec;
+      }
+      .div1
+      {
+         background-color:#fff;
+         width: 100%;
+         text-align: center;
+         position:relative;
+         top: 85px;
+      }
+      .imagemGrande
+      {
+         width: 80%;
+         height: 50%;
+      }
+      .div2
+      {
+         background-color:rgb(243, 243, 243);
+         width: 100%;
+         text-align: center;
+         position:relative;
+         top: 85px;
+      }
+      .h2
+      {
+         width: 40%;
+         font-size: 40px;
+         color: rgb(0, 0, 0);
+         border-bottom:3px solid  #3fffd6;
+      }
+      .texto
+      {
+         font-size: 20px;
+         color: rgb(15, 15, 15);
+         padding: 30px 70px 5px;
+      }
+      .coluna
+      {
+         float: left;
+         width: 33.33%;
+      }
+      .row::after 
+      {
+         content: "";
+         clear: both;
+         display: table;
+      }
+      .imagemlazer
+      {
+         width: 300px;
+         height: 180px;
+      }
+      .restaurante
+      {
+         width: 90%;
+         padding-top: 20px;
+      }
+      .restauranteCard
+      {
+         
+         padding: 0 0;
+         width: 60%;
+         vertical-align:middle;
+         border: 1px solid black;
+      }
+      .restauranteCard img
+      {
+         width: 30%;
+         height: 25%;
+      }
+      .restauranteCard h2
+      {
+         font-size: 20px;
+         padding: 5px;
+      }
+      .restauranteCard p
+      {
+         padding: 5px;
+         font-size: 15px;
+      }
+      .hotel h2
+      {
+         padding-left: 15px;
+         font-size: 20px;
+         float: left;
+         padding-top: 0;
+      }
+      .hotel p
+      {
+         padding-left: 15px;
+         padding-right: 15px;
+         width: auto;
+         font-size: 20px;
+         float: left;
+         text-align: justify;
+      }
+      .hotel
+      {
+         padding: 30px 0;
+         width: 90%;
+         vertical-align:middle;
+         height: 400px;
+      }
+      .hotel img
+      {
+         width: 550px;
+         height: 300px;
+         float: left;
+         padding-left: 15px;
+      }
+      .footer
+      {
+         background: #12daae;
+         width: 100%;
+         text-align: center;
+         position:relative;
+         top: 85px;
+      }
+      .footer a
+      {
+         padding-right: 30px;
+      }
+      @media (max-width:767px)
+      {
+         .h2
+         {
+            width: 40%;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            border-bottom:3px solid  #3fffd6;
+         }
+
+         .header 
+      {
+         text-align: center;
+         background: #12daae;
+         font-size: 15px;
+         width: 100vw;
+         left: 0px;
+         margin-left: 0;  
+         position: absolute;
+         top: 0;
+         margin: 0;
+         border-bottom:1px solid   #91ffe3;
+      }
+      .header ul 
+      {
+         padding:0px;
+         margin:0px;
+         color: #3fffd6;
+         list-style:none;
+         float: right;
+         width: auto;
+         
+      }
+      .header ul li 
+      { 
+         float: right;
+         width: auto;
+         border-right:0px solid   #ffffff;
+         border-right:1px solid   #ffffff;
+      }
+      .header ul li a 
+      {
+         text-transform: uppercase;
+         padding: 5px 5px;
+         display: inline-block;
+         color: rgb(255, 255, 255);
+         width: 140px;
+         height: 40%;
+         text-decoration: none;
+         font-family: 'Poppins', sans-serif;
+      }
+      .header ul li:hover 
+      {
+         background-color:#6ca8ec;
+      }
+      .restauranteCard
+      {
+         padding: 0 0;
+         width: 75%;
+         vertical-align:middle;
+         border: 1px solid black;
+      }
+      .hotel img
+      {
+         width: 400px;
+         height: 250px;
+         float: left;
+         padding-left: 15px;
+      }
+      .coluna img
+      {
+         width: 200px;
+         height: 80px;
+      }
+      .hotel h2
+      {
+         padding-left: 15px;
+         font-size: 15px;
+         float: left;
+         padding-top: 0;
+      }
+      }
+   </style>
+   <body>
+      <header class="header">
+            <ul>
+               <li style="border-right:none;"> <a href="#contatos">Contato</a> </li>
+               <li> <a href="#hospedagem">Hospedagem</a> </li>
+               <li> <a href="#comida">Comida</a> </li>
+               <li> <a href="#lazer">Lazer</a> </li>
+            </ul>   
+      </header>
+
+      <div id="inicio" class="div1">
+         <h2 class="h2">Palmas - Tocantins</h2>
+         <p class="texto">É um município brasileiro, sendo a capital e também a maior cidade do estado do Tocantins. <br>
+            A cidade foi fundada em 20 de maio de 1989, logo após a criação do Tocantins pela Constituição de 1988, pelo governador 
+            José Wilson Siqueira Campos que encarregou, mediante contrato, os arquitetos Luís Fernando Cruvinel Teixeira e Walfredo Antunes de 
+            Oliveira Filho, para a realização do projeto arquitetônico e urbanístico.</p>
+         <figure><img class="imagemGrande" src="images/about.jpeg" alt="img"/></figure>
+      </div>
+
+      <div id="lazer" class="div2">
+         <h2 class="h2">Pontos de Lazer </h2>
+         <p class="texto">Se você está pensando em viajar pra Palmas já deve estar se perguntando o que fazer na cidade, não é mesmo?<br>
+             Vamos conhecer alguns e aproveitar o turismo em Palmas?
+         </p>
+         <div>
+            <div class="row">
+               <div class="coluna">
+                  <img  src="images/1.jpg" >
+                  <p id="texto-imagem">Praia da Graciosa</p>
+               </div>
+               <div class="coluna">
+                  <img  src="images/2.jpg" >
+                  <p id="texto-imagem">Praça dos Girassóis</p>
+               </div>
+               <div class="coluna">
+                  <img src="images/3.jpg" >
+                  <p id="texto-imagem">Ilha da Canela</p>
+               </div>
+            </div> 
+            <div class="row">
+               <div class="coluna">
+                  <img src="images/4.jpg" >
+                  <p id="texto-imagem">Parque Cesamar</p>
+               </div>
+               <div class="coluna">
+                  <img  src="images/5.jpg" >
+                  <p id="texto-imagem">Cachoeira do Roncador</p>
+               </div>
+               <div class="coluna">
+                  <img  src="images/6.jpg" >
+                  <p id="texto-imagem">Mirante da Serra do Lajeado</p>
+               </div>
+            </div>       
+         </div>           
+      </div>
+
+      <div id="comida" class="div1">
+         <h2 class="h2">Restaurantes</h2>
+         <p class="texto">Deu fome? Confira abaixo os restaurantes com as melhores avaliações em Palmas:
+        </p>
+         <div class="restaurante">
+            <div class="row">
+               <div class="restauranteCard">
+                  
+                  <h2>
+                     Adelaide Bistrô
+                  </h2>
+                  <img src="images/adelaideBistro.jpg" >
+                  <p>
+                     "Restaurante acolhedor e charmoso com terraço e jardins tem pratos individuais elaborados à francesa."
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="restauranteCard">
+                  
+                  <h2>
+                     Fogão à Lenha
+                  </h2>
+                  <img src="images/fogaoLenha.jpg" >
+                  <p>
+                     "Restaurante espaçoso e animado serve pratos brasileiros em fogão a lenha, com buffet de saladas e sobremesas."
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="restauranteCard">
+                  
+                  <h2>
+                     Dom Vergílio
+                  </h2>
+                  <img src="images/domVergilio.jpg" >
+                  <p>
+                     "Restaurante com diversas opções em pizzas, grelhados e pratos quentes variados, decoração sóbria e clássica."
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="restauranteCard">
+                  
+                  <h2>
+                     Cabana do Lago
+                  </h2>
+                  <img src="images/cabana-do-lago.jpg" >
+                  <p>
+                     "Culinária regional refinada de menu variado com pescados de água doce, em salão para 400 pessoas com mezanino."
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="hospedagem" class="div2">
+         <h2 class="h2">Hospedagem</h2>
+         <p class="texto">Você vai notar que a rede hoteleira de Palmas não é muito variada, mas com jeitinho a gente acha um 
+            lugar confortável para dormir pagando o que é justo.
+        </p>
+        <div class="hotel">
+           <h2>
+               HOTEL 10 PALMAS
+           </h2>
+           <p >
+              O Hotel 10 Palmas também é novinho e mega aconchegante. Os quartos são muito bem decorados, espaçosos e arejados. 
+              Como é bom chegar em um quarto assim depois de um dia cansativo, não é?
+            </p>
+            <img src="images/hotel10.jpg" >
+        </div>
+        <div class="hotel">
+         <h2>
+            IBIS STYLES PALMAS
+         </h2>
+         <p >
+            O Ibis Styles Palmas é uma excelente opção para quem gosta da rede Ibis e conhece o padrão de atendimento dos hotéis que 
+            levam a marca.
+          </p>
+          <img src="images/ibishotel.jpg" >
+      </div>
+      <div class="hotel">
+         <h2>
+            SELECT HOTEL
+         </h2>
+         <p >
+            O Select Hotel também é muito aconchegante, seguindo na linha dos anteriores, e é daqueles hotéis que a gente paga pelo que vale.
+          </p>
+          <img src="images/selectHotel.jpg" >
+      </div>
+      </div>
+      <div id="contatos" class="footer">
+         <p style="color: #fff;">Contatos do desenvolvedor</p>
+         <i class="fa fa-envelope"></i><a href="mailto:cristovao.l.junior@gmail.com?Subject=AGENDAMENTO""> cristovao.l.junior@gmail.com</a>
+         <i class="fa fa-instagram"></i><a href="https://www.instagram.com/cristovaoliberato/"> @cristovaoliberato</a>
+         <i class="fa fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=5563992220016&text=Olá!%20Gostaria%20de%20marcar%20uma%20data."> (63) 99222-0016</a>
+      </div>
+   </body>
+</html>
